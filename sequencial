@@ -1,0 +1,55 @@
+#Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+x=input ('Digite um numero: ')
+print ('O numero informado foi ' + x)
+--------------
+#Faça um Programa que peça dois números e imprima a soma.
+X= int(input ('Digite o primeiro numero'))
+Y= int(input ('Digite o segundo numero'))
+print ('A soma dos numeros são: ', X+Y)
+-----------
+#Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+N1 = float(input('Qual sua nota do 1B?'))
+N2 = float(input('Qual sua nota do 2B?'))
+N3 = float(input('Qual sua nota do 3B?'))
+N4 = float(input('Qual sua nota do 4B?'))
+print ('A média das notas são: ', (N1+N2+N3+N4)/4 )
+-------------
+#Faça um Programa que converta metros para centímetros.
+X = float(input('Quantos metros são?'))
+print ('Os metros em centimetros são: ', X*100)
+----------
+#João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.
+X = float(input('Quantos kg foi pescado? '))
+
+if X > 50:
+    print ('o excesso da pescaria foi: ', X-50,"kg")
+    print ('A multa a ser cobrada é: R$', (X-50)*4)
+elif X<=50:
+    print ('Não foi excedido o valor da pescaria, não existe multa a ser  cobrada!')
+---------    
+#Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê:
+#salário bruto.
+#quanto pagou ao INSS.
+#quanto pagou ao sindicato.
+#o salário líquido.
+#calcule os descontos e o salário líquido, conforme a tabela abaixo:
+#+ Salário Bruto : R$
+#- IR (11%) : R$
+#- INSS (8%) : R$
+#- Sindicato ( 5%) : R$
+#= Salário Liquido : R$
+#Obs.: Salário Bruto - Descontos = Salário Líquido.
+
+RXH= float(input ('Quanto voce recebe por hora?'))
+H= float(input ('Quantas horas voce trabalha no mês?'))
+
+Sb=RXH*H
+IR= Sb*0.11
+INSS= Sb*0.08
+SD= Sb*0.05
+print ('Salario Bruto: R$', Sb)
+print ('Foi pago ao IR: R$', IR)
+print ('Foi pago ao INSS: R$', INSS )
+print ('Foi pago ao Sindicato: R$', SD)
+print ('Salario Liquido é: R$', Sb-IR-INSS-SD)
+----------
